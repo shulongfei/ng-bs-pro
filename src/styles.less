@@ -1,0 +1,119 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font: 12px "microsoft yahei", Arial, Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 0.65);
+  background-color: #f5f7fa;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lf {
+  float: left;
+}
+
+.rt {
+  float: right;
+}
+
+.clear:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.ellipsis {
+  word-break: keep-all;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/***基础布局***/
+
+.bs-layout {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  overflow-x: hidden;
+
+  .bs-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 19;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+    padding: 0 16px;
+    background-color: #1890ff;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .bs-sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 14;
+    width: 200px;
+    margin-top: 64px;
+    overflow: hidden;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: width 0.3s cubic-bezier(0.25, 0, 0.15, 1), translate 0.3s cubic-bezier(0.25, 0, 0.15, 1);
+    transition: width 0.3s cubic-bezier(0.25, 0, 0.15, 1), translate 0.3s cubic-bezier(0.25, 0, 0.15, 1);
+    -webkit-overflow-scrolling: touch;
+
+    border-right: 1px solid red;
+  }
+}
+
+.bs-content {
+  margin: 64px 24px 24px 224px;
+}
+
+
+
+@media (min-width: 768px) {
+  .bs-content {
+    margin-left: 0;
+  }
+}
