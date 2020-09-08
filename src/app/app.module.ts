@@ -6,18 +6,22 @@ import { AppRoutingModule } from './routes/app-routing.module';
 import { AppComponent } from './app.component';
 
 
-import { LayoutModule } from './layout/layout.module'
-// import { HomeComponent } from './routes/home/home.component';
+import { LayoutModule } from './layout/layout.module';
+
+import { RoutesModule } from './routes/routes.module';
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    // HomeComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LayoutModule
+    LayoutModule,
+    RoutesModule
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
