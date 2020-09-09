@@ -39,12 +39,12 @@ body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd {
 }
 
 a {
-  color: #fff;
+  // color: #fff;
   text-decoration: none;
 }
 
 a:hover {
-  color: #fff;
+  // color: #fff;
   text-decoration: none;
 }
 
@@ -57,16 +57,17 @@ a:hover {
   height: 100%;
   overflow-x: hidden;
 
-  .bs-header {
+  .bs-sidebar {
     position: fixed;
     top: 0;
     bottom: 0;
     z-index: 14;
     min-height: 100%;
     width: 200px;
-    -webkit-transition: width 0.3s cubic-bezier(0.25, 0, 0.15, 1), translate 0.3s cubic-bezier(0.25, 0, 0.15, 1);
     transition: width 0.3s cubic-bezier(0.25, 0, 0.15, 1), translate 0.3s cubic-bezier(0.25, 0, 0.15, 1);
-    -webkit-overflow-scrolling: touch;
+    -webkit-transition: width 0.3s cubic-bezier(0.25, 0, 0.15, 1), translate 0.3s cubic-bezier(0.25, 0, 0.15, 1);
+    // -webkit-overflow-scrolling: touch;
+    background: #201f29;
   }
 
   .bs-layout {
@@ -77,6 +78,7 @@ a:hover {
       padding: 15px;
     }
   }
+
 }
 
 .bs-header {
